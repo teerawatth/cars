@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+{% block header %}
+<header class=" py-1" style="background: linear-gradient(90deg, rgba(0,94,158,1) 0%, rgba(0,94,158,1) 0%, rgba(0,94,158,1) 0%, rgba(0,153,206,1) 57%);">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white" style="font-family: 'Russo One', sans-serif;">
+                    <h1 class="display-4 fw-bolder"><img src="https://seeklogo.com/images/B/Bugatti-logo-9B69E86879-seeklogo.com.png" width="120">      Bugatti automotive</h1>
+                </div>
+            </div>
+        </header>
+{% endblock %}
+{% block sec %}
+<section class="py-5" style="font-family: 'Ubuntu', sans-serif;">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+
+                            <img class="card-img-top" src="https://sv1.img.in.th/ibakS.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Bugatti automotive</h5>
+                                </div>
+                            </div>
+                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'bugadetail' %}">View more</a></div>
+                            </div>
+
+                            <!-- Product actions-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+</section>
+{% endblock %}
