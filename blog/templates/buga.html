@@ -13,9 +13,9 @@
 <section class="py-5" style="font-family: 'Ubuntu', sans-serif;">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-
+{% for i in bugattis %}
                     <div class="col mb-5">
-                        {% for i in bugattis %}
+
                         <div class="card h-100">
                             <img class="card-img-top" src="{{ i.img }}" alt="..." />
                             <!-- Product details-->
@@ -29,10 +29,11 @@
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'bugadetail' %}">View more</a></div>
                             </div>
                         </div>
-                        {% endfor %}
+
                     </div>
 
                 </div>
             </div>
+    {% endfor %}
 </section>
 {% endblock %}
