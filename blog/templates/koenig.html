@@ -1,10 +1,10 @@
 {% extends 'index.html' %}
 
 {% block header %}
-<header class=" py-1" style="background: linear-gradient(90deg, rgba(0,94,158,1) 0%, rgba(0,94,158,1) 0%, rgba(0,94,158,1) 0%, rgba(0,153,206,1) 57%);">
+<header class=" py-1" style="background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(39,39,39,1) 0%, rgba(39,39,39,1) 0%, rgba(197,136,56,1) 57%);">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white" style="font-family: 'Russo One', sans-serif;">
-                    <h1 class="display-4 fw-bolder"><img src="https://seeklogo.com/images/B/Bugatti-logo-9B69E86879-seeklogo.com.png" width="120">      Bugatti automotive</h1>
+                    <h1 class="display-4 fw-bolder"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c486.png" width="80">      Koenigsegg Automotive AB</h1>
                 </div>
             </div>
         </header>
@@ -13,7 +13,7 @@
 <section class="py-5" style="font-family: 'Ubuntu', sans-serif;">
 
             <div class="container">
-                {% for i in bugattis %}
+                {% for i in koenigseggs %}
                 <div class="row">
 
                     <div class="col mb-5">
@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'bugadetail' i.pk %}">View more</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'koenigdetail' i.pk %}">View more</a></div>
                             </div>
                         </div>
 
